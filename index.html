@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>NewsLetter</title>
 </head>
 
@@ -16,13 +17,23 @@
 
   <main>
     <section class="sign-up">
-      <h1 class="sign-up__title">Mantenha-se atualizado!</h1>
-
-      <h2 class="sign-up__subtitle">Junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais sobre:</h2>
-
-      <p class="sign-up__receive">Descoberta de produtos e construção do que importa</p>
-      <p class="sign-up__receive">Medir para garantir que as atualizações sejam um sucesso</p>
-      <p class="sign-up__receive">E muito mais!</p>
+      <h1 class="sign-up__title">Fique Atualizado!</h1>
+      <span>
+        <p>Junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais
+          sobre:</p>
+      </span>
+      <div class="container">
+        <img src="/assets/images/icon-list.svg" alt="">
+        <p class="sign-up__receive">Descoberta de produtos e construção do que importa</p>
+      </div>
+      <div class="container">
+        <img src="/assets/images/icon-list.svg" alt="">
+        <p class="sign-up__receive">Medir para garantir que as atualizações sejam um sucesso</p>
+      </div>
+      <div class="container">
+        <img src="/assets/images/icon-list.svg" alt="">
+        <p class="sign-up__receive">E muito mais!</p>
+      </div>
 
       <form class="sign-up__form">
         <label class="sign-up__form_email" for="email">Informe o seu Email</label>
@@ -34,7 +45,7 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-<!-- 
+    <!-- 
     Thanks for subscribing!
 
     A confirmation email has been sent to ash@loremcompany.com.
@@ -42,7 +53,6 @@
 
     Dismiss message -->
     <section class="imagem__newsletter">
-      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
     </section>
   </main>
   <!-- Success message end -->
