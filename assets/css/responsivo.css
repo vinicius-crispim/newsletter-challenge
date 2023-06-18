@@ -31,12 +31,19 @@
     .sign-up__form input {
         margin: .5rem 0 1rem 0;
     }
+
+    .main-success {
+        height: auto;
+        width: 55%;
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 1070px) {
 
     main {
         padding: .5rem;
+        
     }
 
     .sign-up {
@@ -72,6 +79,7 @@
     .sign-up__form button {
         padding: 1rem 2rem;
     }
+
 }
 
 @media only screen and (max-width:880px) {
@@ -80,8 +88,8 @@
         flex-direction: column-reverse;
         padding: 0;
         border-radius: 0;
-        height: 100vh;
-        width: 100vh;
+        height: 90vh;
+        width: 70vh;
     }
 
     main section:first-child {
@@ -128,12 +136,31 @@
 
     .sign-up__form button {
         padding: .75rem;
-        margin: 0 0 .25rem 0;
+        margin: 0 0 .75rem 0;
     }
 
-    .imagem-newsletter-desktop {
+    .imagem-newsletter {
         border-radius: 0 0 25px 25px;
         margin-left: 0;
         background: url(../images/illustration-sign-up-mobile.svg) right / cover no-repeat;
     }
+    
+    .btn-success-message {
+        padding:.75rem .25rem;
+    }
+}
+
+@media only screen and (max-width:460px) {
+
+    main, .main-success {
+        border-radius:0;
+        height: 100vh;
+        width: 100vh;
+    }
+
+    .main-success {
+        justify-content: space-evenly;
+    }
+
+    
 }

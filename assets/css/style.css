@@ -11,9 +11,9 @@ body {
 main {
     display: flex;
     filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.575));
-    height: 55%;
-    padding: 3rem 2rem;
-    width: 40%;
+    height: 80%;
+    padding: .75rem;
+    width: 80%;
     background: hsl(0, 0%, 100%);
     border-radius: 20px;
 }
@@ -105,29 +105,26 @@ span p {
 
 /* Section Imagem*/
 
-.imagem-newsletter-desktop{
+.imagem-newsletter{
     border-radius: 10px;
     background: url(../images/illustration-sign-up-desktop.svg) right / cover no-repeat;
     margin-left: 2rem;
     height: 100%
 }
 
-.sign-up, .imagem-newsletter-desktop{
+/* .sign-up, .imagem-newsletter{
     display: none;
-}
+} */
+
+/* Success Mesasage */
 
 .success-message {
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
     align-items: start;
-    position: absolute;
-    z-index: 1;
-    top: 2.5rem;
-    left: 3.5rem;
-    right: 3.5rem;
-    bottom: 3rem;
+    margin: 1rem;
 }
 
 .success-message img {
@@ -136,10 +133,27 @@ span p {
 }
 
 .success-message p {
+    font-size: 16px;
     line-height: 1.2;
-    padding-bottom: .75rem;
 }
 
 .success-message span {
     font-weight: bold;
 }
+
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-success {
+    height: 50%;
+    border-radius: 25px;
+    padding: 2rem;
+    width: 40%;
+    
+}
+
