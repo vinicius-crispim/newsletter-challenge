@@ -1,13 +1,3 @@
-/* .imagem__newsletter {
-    position: absolute;
-    top: 0;
-    left: 450px;
-    bottom: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-    background: url(../images/illustration-sign-up-desktop.svg);
-} */
 
 body {
     background: hsl(234, 29%, 20%);
@@ -20,9 +10,10 @@ body {
 
 main {
     display: flex;
-    height: 80%;
-    padding: .75rem;
-    width: 80%;
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.575));
+    height: 55%;
+    padding: 3rem 2rem;
+    width: 40%;
     background: hsl(0, 0%, 100%);
     border-radius: 20px;
 }
@@ -35,6 +26,8 @@ main section:nth-child(2) {
     width: 40%;
 }
 
+/* Section Texto e Formulário */
+
 .sign-up {
     display: flex;
     flex-direction: column;
@@ -43,7 +36,7 @@ main section:nth-child(2) {
 
 }
 
-.sign-up__title {
+.title {
     padding: 0 0 .25rem 0;
     font-size: 48px;
     font-weight: bold;
@@ -92,18 +85,61 @@ span p {
     margin: .75rem 0 1.5rem 0;
 }
 
-.sign-up__form button {
+.btn-primary{
     font-weight: bold;
     color: #FDFDFD;
     padding: 1rem 3rem;
     width: 100%;
     background: hsl(233, 41%, 34%);
     border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 7px 6px 5px rgba(50, 50, 50, 0.77);
 }
+
+.btn-primary:hover {
+    opacity: .85;
+    transition: 3s;
+    background: linear-gradient(0.25turn, #ff5476, #fd6c3c);
+
+}
+
+/* Section Imagem*/
 
 .imagem-newsletter-desktop{
     border-radius: 10px;
     background: url(../images/illustration-sign-up-desktop.svg) right / cover no-repeat;
     margin-left: 2rem;
     height: 100%
+}
+
+.sign-up, .imagem-newsletter-desktop{
+    display: none;
+}
+
+.success-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: start;
+    position: absolute;
+    z-index: 1;
+    top: 2.5rem;
+    left: 3.5rem;
+    right: 3.5rem;
+    bottom: 3rem;
+}
+
+.success-message img {
+    width: 50px;
+    height: 50px;
+}
+
+.success-message p {
+    line-height: 1.2;
+    padding-bottom: .75rem;
+}
+
+.success-message span {
+    font-weight: bold;
 }

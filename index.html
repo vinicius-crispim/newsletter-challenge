@@ -17,9 +17,10 @@
 <body>
 
   <main>
-
+    
     <section class="sign-up">
-      <h1 class="sign-up__title">Fique Atualizado!</h1>
+
+      <h1 class="title">Fique Atualizado!</h1>
       <span>
         <p>Junte-se a mais de 60.000 gerentes de produto que recebem atualizações mensais
           sobre:</p>
@@ -40,22 +41,25 @@
       <form class="sign-up__form">
         <label class="sign-up__form_email" for="email">Informe o seu Email</label>
         <input placeholder="email@company.com" id="email" name="email" type="email">
-        <button>Inscreva-se para novidades mensais</button>
+        <button class="btn-primary">Inscreva-se para novidades mensais</button>
       </form>
     </section>
 
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-    <!-- 
-    Thanks for subscribing!
-
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-
-    Dismiss message -->
     <section class="imagem-newsletter-desktop">
     </section>
+
+    <!-- Success message start -->
+    <section class="success-message"> 
+      <img src="/assets/images/icon-list.svg" alt="">
+      <h1 class="title">Obrigado por se inscrever!</h1>
+
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    
+
+      <button class="btn-primary">Dismiss message</button>
+    </section>
+
+    <!-- Sign-up form end -->
   </main>
   <!-- Success message end -->
 
