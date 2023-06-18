@@ -70,10 +70,70 @@
     }
 
     .sign-up__form button {
-        padding: 1rem 2.25rem;
+        padding: 1rem 2rem;
     }
 }
 
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:880px) {
+
+    main {
+        flex-direction: column-reverse;
+        padding: 0;
+        border-radius: 0;
+        height: 100vh;
+        width: 100vh;
+    }
+
+    main section:first-child {
+        width: auto;
+        height: 70%;
+    }
     
+    main section:nth-child(2) {
+        width: auto;
+        height:30%;
+    }
+
+    .sign-up {
+        padding: 1rem 1rem;
+        justify-content: space-evenly;
+    }
+
+    span p,
+    .sign-up__receive {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .sign-up__title {
+        padding-top: .5rem;
+        font-size: 32px
+    }
+
+    span p {
+        padding: .5rem 0;
+    }
+
+    .container {
+        padding:0;
+    }
+
+    .sign-up__form {
+        padding: .75rem 0 0 0;
+    }
+
+    .sign-up__form label{
+        font-size: 12px;
+    }
+
+    .sign-up__form button {
+        padding: .75rem;
+        margin: 0 0 .25rem 0;
+    }
+
+    .imagem-newsletter-desktop {
+        border-radius: 0 0 25px 25px;
+        margin-left: 0;
+        background: url(../images/illustration-sign-up-mobile.svg) right / cover no-repeat;
+    }
 }

@@ -28,17 +28,17 @@ main {
 }
 
 main section:first-child {
-    width: 50%;
+    width: 60%;
 }
 
 main section:nth-child(2) {
-    width: 50%;
+    width: 40%;
 }
 
 .sign-up {
     display: flex;
     flex-direction: column;
-    padding: 3.5rem 1.5rem 3rem 3.5rem;
+    padding: 4rem 0 2rem 3.5rem;
     justify-content: center;
 
 }
@@ -98,9 +98,10 @@ span p {
     padding: 1rem 3rem;
     width: 100%;
     background: hsl(233, 41%, 34%);
+    border-radius: 12px;
 }
 
-.imagem-newsletter {
+.imagem-newsletter-desktop{
     border-radius: 10px;
     background: url(../images/illustration-sign-up-desktop.svg) right / cover no-repeat;
     margin-left: 2rem;
