@@ -141,10 +141,10 @@
 
     .principal-success{
         height: auto;
-        width: 75%;
+        width: 80%;
     }
     .btn-success-message {
-        padding:.75rem .25rem;
+        padding:.75rem;
     }
 }
 
@@ -157,7 +157,15 @@
     }
 
     .principal-success {
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .principal-success img {
+        margin: 2rem 0;
+    }
+
+    .principal-success p {
+        margin-bottom: 3rem;
     }
 
     
