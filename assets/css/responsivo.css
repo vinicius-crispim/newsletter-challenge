@@ -86,7 +86,7 @@
         flex-direction: column-reverse;
         padding: 0;
         border-radius: 0;
-        height: 80%;
+        height: 85%;
     }
 
     .principal section:first-child {
@@ -111,12 +111,12 @@
     }
 
     .title {
-        padding-top: .5rem;
+        margin-top: .75rem;
         font-size: 32px
     }
 
     span p {
-        padding: .5rem 0;
+        padding: .2rem 0;
     }
 
     .container {
@@ -124,13 +124,12 @@
     }
 
     .sign-up__form {
-        padding: .75rem 0 0 0;
+        padding: .2rem 0 0 0;
     }
 
-
     .sign-up__form button {
-        padding: .75rem;
-        margin: 0 0 .75rem 0;
+        padding: .5rem;
+        margin: 0 0 1rem 0;
     }
 
     .imagem-newsletter {
@@ -148,7 +147,7 @@
     }
 }
 
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:480px) {
 
     .principal, .principal-success {
         border-radius:0;
