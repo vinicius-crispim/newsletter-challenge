@@ -1,10 +1,10 @@
 @media only screen and (max-width: 1220px) {
 
-    main section:first-child {
+    .principal section:first-child {
         width: 55%;
     }
 
-    main section:nth-child(2) {
+    .principal section:nth-child(2) {
         width: 45%;
     }
 
@@ -32,18 +32,16 @@
         margin: .5rem 0 1rem 0;
     }
 
-    .main-success {
+    .principal-success {
         height: auto;
         width: 55%;
-        padding: 1rem;
     }
 }
 
 @media only screen and (max-width: 1070px) {
 
-    main {
+    .principal {
         padding: .5rem;
-        
     }
 
     .sign-up {
@@ -72,7 +70,7 @@
         padding: .75rem 0 0 0;
     }
 
-    .sign-up__form label {
+    .sign-up__form{
         font-size: 14px;
     }
 
@@ -84,20 +82,19 @@
 
 @media only screen and (max-width:880px) {
 
-    main {
+    .principal {
         flex-direction: column-reverse;
         padding: 0;
         border-radius: 0;
-        height: 90vh;
-        width: 70vh;
+        height: 80%;
     }
 
-    main section:first-child {
+    .principal section:first-child {
         width: auto;
         height: 70%;
     }
     
-    main section:nth-child(2) {
+    .principal section:nth-child(2) {
         width: auto;
         height:30%;
     }
@@ -130,9 +127,6 @@
         padding: .75rem 0 0 0;
     }
 
-    .sign-up__form label{
-        font-size: 12px;
-    }
 
     .sign-up__form button {
         padding: .75rem;
@@ -144,7 +138,11 @@
         margin-left: 0;
         background: url(../images/illustration-sign-up-mobile.svg) right / cover no-repeat;
     }
-    
+
+    .principal-success{
+        height: auto;
+        width: 75%;
+    }
     .btn-success-message {
         padding:.75rem .25rem;
     }
@@ -152,13 +150,13 @@
 
 @media only screen and (max-width:460px) {
 
-    main, .main-success {
+    .principal, .principal-success {
         border-radius:0;
         height: 100vh;
         width: 100vh;
     }
 
-    .main-success {
+    .principal-success {
         justify-content: space-evenly;
     }
 

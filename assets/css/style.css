@@ -1,4 +1,3 @@
-
 body {
     background: hsl(234, 29%, 20%);
     font-family: 'Roboto', sans-serif;
@@ -8,7 +7,7 @@ body {
     height: 100vh;
 }
 
-main {
+.principal {
     display: flex;
     filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.575));
     height: 80%;
@@ -18,11 +17,11 @@ main {
     border-radius: 20px;
 }
 
-main section:first-child {
+.principal section:first-child {
     width: 60%;
 }
 
-main section:nth-child(2) {
+.principal section:nth-child(2) {
     width: 40%;
 }
 
@@ -72,20 +71,32 @@ span p {
     padding: 1.5rem 0 0 0;
 }
 
-.sign-up__form label {
+.sign-up__form{
     font-size: 16px;
+}
+
+.sign-up__form .sign-up__form__labels__email {
     color: hsl(233, 41%, 34%);
 }
 
-.sign-up__form input {
-    border: 2px solid hsl(231, 7%, 60%);
+.sign-up__form .sign-up__form__labels__erro {
+    color:transparent;
+}
+
+.sign-up__form .sign-up__form__labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up__form__input {
+    border: 1px solid hsl(231, 7%, 60%);
     border-radius: 7px;
     padding: 1rem;
     width: 100%;
     margin: .75rem 0 1.5rem 0;
 }
 
-.btn-primary{
+.btn-primary {
     font-weight: bold;
     color: #FDFDFD;
     padding: 1rem 3rem;
@@ -105,16 +116,13 @@ span p {
 
 /* Section Imagem*/
 
-.imagem-newsletter{
+.imagem-newsletter {
     border-radius: 10px;
     background: url(../images/illustration-sign-up-desktop.svg) right / cover no-repeat;
     margin-left: 2rem;
     height: 100%
 }
 
-/* .sign-up, .imagem-newsletter{
-    display: none;
-} */
 
 /* Success Mesasage */
 
@@ -141,19 +149,32 @@ span p {
     font-weight: bold;
 }
 
+
+/* classes auxiliares JS*/
 .show {
     display: flex;
+}
+
+.show-erro{
+    color: hsl(4, 100%, 67%);
+    font-size: inherit;
 }
 
 .hidden {
     display: none;
 }
 
-.main-success {
-    height: 50%;
+.principal-success {
+    height: 60%;
     border-radius: 25px;
     padding: 2rem;
-    width: 40%;
-    
+    width: 45%;
 }
 
+.erro-input{
+    border: 1px solid hsl(4, 100%, 67%);     
+    background-color:hsl(4, 100%, 90%) ;
+}
+.erro-input::placeholder{
+    color: hsl(4, 100%, 67%);
+}

@@ -16,8 +16,8 @@
 
 <body>
 
-  <main class="main">
-    
+  <main class="principal">
+
     <section class="sign-up">
 
       <h1 class="title">Fique Atualizado!</h1>
@@ -39,8 +39,11 @@
       </div>
 
       <form class="sign-up__form">
-        <label class="sign-up__form_email" for="email">Informe o seu Email</label>
-        <input placeholder="email@company.com" id="email" name="email" type="email">
+        <div class="sign-up__form__labels">
+          <label class="sign-up__form__labels__email" for="email">Informe seu email</label>
+          <label class="sign-up__form__labels__erro" for="email" id="erromsg">Email informado é inválido</label>
+        </div>
+        <input class="sign-up__form__input" placeholder="email@company.com" id="email" name="email" type="email">
         <button class="btn-primary btn-sign-up">Inscreva-se para novidades mensais</button>
       </form>
     </section>
@@ -49,12 +52,13 @@
     </section>
 
     <!-- Success message start -->
-    <section class="success-message"> 
+    <section class="success-message">
       <img src="/assets/images/icon-list.svg" alt="Icone check">
       <h1 class="title">Obrigado por se inscrever!</h1>
 
-      <p>Uma mensagem de confirmação foi enviada paara <span>ash@loremcompany.com</span>. Por favor, abra e clique no botão para confirmar a sua inscrição!</p>
-    
+      <p>Uma mensagem de confirmação foi enviada para <span class="success-message__email">ash@loremcompany.com</span>. Por favor, abra e clique no
+        botão para confirmar a sua inscrição!</p>
+
 
       <button class="btn-primary btn-success-message">Descartar mensagem</button>
     </section>
